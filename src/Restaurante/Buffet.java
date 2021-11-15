@@ -2,8 +2,21 @@ package Restaurante;
 
 public class Buffet extends Produto{
 
-	public Buffet(int codigo, String nome, String unidadeVenda, double precoUnitario) {
+	private double limite;
+
+	public Buffet(int codigo, String nome, String unidadeVenda, double precoUnitario, double limite) {
 		super(codigo, nome, unidadeVenda, precoUnitario);
+		this.limite = limite;
+		unidadeVenda = "quilo";	
+	}
+
+	public double CalculaCusto(double quantidade){  
+		double valorTotal = super.calculaCusto(quantidade);
+		if (valorTotal > limite){
+			return(limite);
+		}else{
+			return(valorTotal);
+		}
 	}
 
 }
