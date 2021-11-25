@@ -25,4 +25,16 @@ public class Produto {
 	 public void setPrecoUnitario(){
 	        this.precoUnitario = precoUnitario;
 	    }
+
+	public double getPrecoUnitario(){
+		return precoUnitario;
+	}
+
+	public String getUnidadeVenda(){
+		return this.unidadeVenda;
+	}
+
+	public String getNome(){
+		return this.nome;
+	}
 }

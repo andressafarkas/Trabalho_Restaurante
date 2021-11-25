@@ -2,10 +2,8 @@ package Restaurante;
 
 public class Atendimento extends Produto{
 
-	private double valorPorPessoa;
-	public Atendimento(int codigo, String nome, String unidadeVenda, double precoUnitario, double valorPorPessoa) {
+	public Atendimento(int codigo, String nome, String unidadeVenda, double precoUnitario) {
 		super(codigo, nome, unidadeVenda, precoUnitario);
-		this.valorPorPessoa = valorPorPessoa;
 	}
 	
 	public double CalculaCusto(double quantidade){  
@@ -13,7 +11,7 @@ public class Atendimento extends Produto{
 		if (quantidade >= 7){
 			return(valorTotal);
 		}else{
-			valorTotal = valorTotal + (valorPorPessoa * quantidade);
+			valorTotal = valorTotal + (getPrecoUnitario() * quantidade);
 			return(valorTotal);
 		}
 	}
