@@ -10,12 +10,12 @@ public class Buffet extends Produto{
 		unidadeVenda = "quilo";	
 	}
 
-	public double CalculaCusto(double quantidade){  
-		double valorTotal = super.calculaCusto(quantidade);
-		if (valorTotal > limite){
+	public double calculaCusto(double quantidade){  
+		double valor = super.calculaCusto(quantidade);
+		if (valor > limite){
 			return(limite);
 		}else{
-			return(valorTotal);
+			return(valor);
 		}
 	}
 

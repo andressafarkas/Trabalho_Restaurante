@@ -10,10 +10,10 @@ public class Suco extends Produto{
 		this.comAcucar = comAcucar;
 	}
 
-	public double CalculaCusto(double quantidade){  
-		double valorTotal = super.calculaCusto(quantidade);
-		if (quantidade >= 3){
-			valorTotal = (valorTotal * 15) / 100;
+	public double calculaCusto(double quantidade){ 
+		double valorTotal = super.calculaCusto(quantidade); 
+		if (quantidade > 3){
+			valorTotal = valorTotal - (valorTotal * 15) / 100;
 			return(valorTotal);
 		}else{
 			return(valorTotal);

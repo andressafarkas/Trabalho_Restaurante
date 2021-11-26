@@ -15,7 +15,7 @@ public class Produto {
 	}
 
 	public double calculaCusto(double quantidade) {
-		return precoUnitario * quantidade;
+		return getPrecoUnitario() * quantidade;
 	}
 	
 	 public void setNome(){

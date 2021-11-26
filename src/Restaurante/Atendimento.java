@@ -6,13 +6,11 @@ public class Atendimento extends Produto{
 		super(codigo, nome, unidadeVenda, precoUnitario);
 	}
 	
-	public double CalculaCusto(double quantidade){  
-		double valorTotal = super.calculaCusto(quantidade);
+	public double calculaCusto(double quantidade){  
 		if (quantidade >= 7){
-			return(valorTotal);
+			return 0;
 		}else{
-			valorTotal = valorTotal + (getPrecoUnitario() * quantidade);
-			return(valorTotal);
+			return(super.calculaCusto(quantidade));
 		}
 	}
 }

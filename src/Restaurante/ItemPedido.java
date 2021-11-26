@@ -20,13 +20,13 @@ public class ItemPedido {
 
     public double calculaSubtotal(){
         if (produto instanceof Suco){
-            return produto.calculaCusto(quantidade);
+            return produto.calculaCusto(getQuantidade());
         }else if(produto instanceof Buffet){
-            return produto.calculaCusto(quantidade);
+            return produto.calculaCusto(getQuantidade());
         }else if(produto instanceof Refrigerante){
-            return produto.calculaCusto(quantidade);
+            return produto.calculaCusto(getQuantidade());
         }else if(produto instanceof Atendimento){
-            return produto.calculaCusto(quantidade);
+            return produto.calculaCusto(getQuantidade());
         }else{
             return 0.0;
         }
