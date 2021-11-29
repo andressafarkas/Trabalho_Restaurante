@@ -4,7 +4,7 @@ public class Produto {
 	
 	private static int codigo;
 	private String nome;
-	private static String unidadeVenda;
+	private String unidadeVenda;
 	private double precoUnitario;
 	
 	public Produto(int codigo, String nome, String unidadeVenda, double precoUnitario) {

@@ -6,8 +6,7 @@ public class Buffet extends Produto{
 
 	public Buffet(int codigo, String nome, String unidadeVenda, double precoUnitario, double limite) {
 		super(codigo, nome, unidadeVenda, precoUnitario);
-		this.limite = limite;
-		unidadeVenda = "quilo";	
+		this.limite = limite;	
 	}
 
 	public double calculaCusto(double quantidade){  

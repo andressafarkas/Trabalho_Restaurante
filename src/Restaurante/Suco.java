@@ -6,7 +6,6 @@ public class Suco extends Produto{
 
 	public Suco(int codigo, String nome, String unidadeVenda, double precoUnitario, boolean comAcucar) {
 		super(codigo, nome, unidadeVenda, precoUnitario);
-		unidadeVenda = "copo";
 		this.comAcucar = comAcucar;
 	}
 
